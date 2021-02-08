@@ -69,6 +69,10 @@ docker-compose down
 ```bash
 docker-compose run web python manage.py migrate
 ```
+#### Сбор статических файлов:
+```bash
+docker-compose run web python manage.py collectstatic --noinput
+```
 #### Инициализация стартовых данных:
 ```bash
 docker-compose run web python manage.py loaddata fixtures/fixtures.json
